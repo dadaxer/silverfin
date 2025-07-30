@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+  <wallpaper deleted="false">
+    <name>Silverfin 01</name>
+    <filename>/usr/share/backgrounds/silverfin/silverfin-01.xml</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#AE5452</pcolor>
+    <scolor>#AE5452</scolor>
+  </wallpaper>
+</wallpapers>
