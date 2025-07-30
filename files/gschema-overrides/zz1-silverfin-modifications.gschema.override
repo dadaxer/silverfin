@@ -4,7 +4,7 @@ clock-show-weekday=true
 font-antialiasing="rgba"
 font-name="Adwaita Sans 11"
 document-font-name="Adwaita Sans 11"
-monospace-font-name="JetBrains Mono 13"
+monospace-font-name="Fira Mono 12"
 accent-color="orange"
 color-scheme='prefer-dark'
 
