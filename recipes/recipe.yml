@@ -12,10 +12,22 @@ image-version: latest
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - type: os-release
+    properties:
+      ID: silverfin
+      NAME: Silverfin
+      PRETTY_NAME: Silverfin Image
+      VARIANT_ID: silverfin-dx
+      IMAGE_ID: silverfin-dx
+      RELEASE_TYPE: stable
   - type: files
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+
+  - type: gschema-overrides
+    include:
+      - zz1-silverfin-modifications.gschema.override
 
   - type: rpm-ostree
     repos:
@@ -41,5 +53,19 @@ modules:
           - org.gnome.Loupe
         remove:
           - org.gnome.eog
+
+  - type: soar
+    additional-repos: true
+    auto-upgrade: true
+    upgrade-interval: "3h"
+
+  - type: yafti
+
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - BigBlueTerminal
+        - FiraCode
+        - GeistMono
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
