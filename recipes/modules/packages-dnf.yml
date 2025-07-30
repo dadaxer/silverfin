@@ -1,0 +1,16 @@
+type: dnf
+repos:
+  nonfree: negativo17
+  cleanup: true
+remove:
+  auto-remove: true
+  packages:
+    - gnome-tweaks
+    - firefox
+    - firefox-langpacks
+install:
+  packages:
+    - input-remapper
+    - lutris
+    - mangohud
+    - steam
