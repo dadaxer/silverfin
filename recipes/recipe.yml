@@ -1,13 +1,13 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
-name: template
+name: silverfin
 # description will be included in the image's metadata
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 41 # latest is also supported if you want new updates ASAP
+image-version: latest
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -30,15 +30,16 @@ modules:
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
-      # If no repo information is specified, Flathub will be used by default
-      install:
-        - org.mozilla.firefox
-        - org.gnome.Loupe
-      remove:
-        - org.gnome.eog
-    user: {} # Also add Flathub user repo, but no user packages
+    configurations:
+      - notify: true # Send notification after install/uninstall is finished (true/false)
+        scope: user
+        repo:
+          title: Flathub (user)
+          name: flathub
+        install:
+          - org.mozilla.firefox
+          - org.gnome.Loupe
+        remove:
+          - org.gnome.eog
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
-
