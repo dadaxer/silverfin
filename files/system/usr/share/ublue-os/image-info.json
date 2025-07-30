@@ -1,9 +1,9 @@
 {
-  "image-name": "mesolite",
+  "image-name": "silverfin",
   "image-flavor": "main",
   "image-vendor": "ublue-os",
-  "image-ref": "ostree-image-signed:docker://ghcr.io/dadaxer/mesolite:stable",
-  "image-tag": "stable",
+  "image-ref": "ostree-image-signed:docker://ghcr.io/dadaxer/silverfin:latest",
+  "image-tag": "latest",
   "base-image-name": "silverblue",
   "fedora-version": "42"
 }
