@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+    <wallpaper deleted="false">
+        <name>Cosy Tree</name>
+        <filename>/usr/share/backgrounds/mesolite/cosy-tree.png</filename>
+        <filename-dark>/usr/share/backgrounds/mesolite/cosy-tree.png</filename-dark>
+        <options>zoom</options>
+    </wallpaper>
+</wallpapers>
