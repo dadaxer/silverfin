@@ -54,6 +54,8 @@ modules:
         remove:
           - org.gnome.eog
 
+  - from-file: modules/gnome-extensions.yml
+
   - type: soar
     additional-repos: true
     auto-upgrade: true
