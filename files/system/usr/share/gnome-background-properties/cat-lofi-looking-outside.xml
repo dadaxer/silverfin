@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+    <wallpaper deleted="false">
+        <name>Cat-Window</name>
+        <filename>/usr/share/backgrounds/mesolite/cat-lofi-looking-outside.jpg</filename>
+        <filename-dark>/usr/share/backgrounds/mesolite/cat-lofi-looking-outside.jpg</filename-dark>
+        <options>zoom</options>
+    </wallpaper>
+</wallpapers>
