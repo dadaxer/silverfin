@@ -10,8 +10,11 @@ remove:
     - gnome-tweaks
     - firefox
     - firefox-langpacks
+    - nvtop
+    - yelp
 install:
   packages:
+    - bash-completion
     - input-remapper
     - lutris
     - mangohud
