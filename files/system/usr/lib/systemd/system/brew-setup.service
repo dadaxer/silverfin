@@ -9,12 +9,12 @@ ConditionPathExists=!/var/home/linuxbrew/.linuxbrew
 Type=oneshot
 ExecStart=/usr/bin/mkdir -p /tmp/homebrew
 ExecStart=/usr/bin/mkdir -p /var/home/linuxbrew
-ExecStart=/usr/bin/wget -O /usr/share/homebrew.tar.zst https://github.com/ublue-os/packages/releases/download/homebrew-2025-07-29-01-30-49/homebrew-x86_64.tar.zst
-ExecStart=/usr/bin/tar --zstd -xvf /usr/share/homebrew.tar.zst -C /tmp/homebrew
+ExecStart=/usr/bin/wget -O /tmp/homebrew.tar.zst https://github.com/ublue-os/packages/releases/download/homebrew-2025-07-29-01-30-49/homebrew-x86_64.tar.zst
+ExecStart=/usr/bin/tar --zstd -xvf /tmp/homebrew.tar.zst -C /tmp/homebrew
 ExecStart=/usr/bin/cp -R -n /tmp/homebrew/home/linuxbrew/.linuxbrew /var/home/linuxbrew
 ExecStart=/usr/bin/chown -R 1000:1000 /var/home/linuxbrew
 ExecStart=/usr/bin/rm -rf /tmp/homebrew
-ExecStart=/usr/bin/rm /usr/share/homebrew.tar.zst
+ExecStart=/usr/bin/rm /tmp/homebrew.tar.zst
 ExecStart=/usr/bin/touch /etc/.linuxbrew
 
 [Install]
