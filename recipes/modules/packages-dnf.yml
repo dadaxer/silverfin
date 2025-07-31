@@ -1,9 +1,11 @@
 type: dnf
 repos:
   nonfree: negativo17
-  cleanup: true
+  copr:
+    - atim/starship
   files:
     - https://download.docker.com/linux/fedora/docker-ce.repo
+  cleanup: true
 remove:
   auto-remove: true
   packages:
@@ -14,11 +16,11 @@ remove:
     - yelp
 install:
   packages:
-    - distrobox
     - fastfetch
     - input-remapper
     - lutris
     - mangohud
+    - starship
     - steam
     - containerd.io
     - docker-ce
