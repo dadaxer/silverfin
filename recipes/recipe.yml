@@ -56,12 +56,13 @@ modules:
         remove:
           - org.gnome.eog
 
-  - from-file: modules/gnome-extensions.yml
-
   - type: soar
     additional-repos: true
     auto-upgrade: true
     upgrade-interval: "3h"
+
+  - from-file: modules/gnome-extensions.yml
+  # - from-file: modules/systemd.yml
 
   - type: yafti
 

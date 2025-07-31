@@ -4,6 +4,8 @@ install:
   - Bluetooth Battery Meter
   - Compact Top Bar
   - Control monitor brightness and volume with ddcutil
+  - Dash to Dock
+  - Logo Menu
   - Notification Configurator
   - RunCat
   - Tiling Shell

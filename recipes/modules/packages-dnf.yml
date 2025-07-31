@@ -2,6 +2,8 @@ type: dnf
 repos:
   nonfree: negativo17
   cleanup: true
+  files:
+    - https://download.docker.com/linux/fedora/docker-ce.repo
 remove:
   auto-remove: true
   packages:
@@ -14,3 +16,7 @@ install:
     - lutris
     - mangohud
     - steam
+    - containerd.io
+    - docker-ce-cli
+    - docker-buildx-plugin
+    - docker-compose-plugin
