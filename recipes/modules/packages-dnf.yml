@@ -22,6 +22,7 @@ install:
     - mangohud
     - starship
     - steam
+    - rocm-hip
     - containerd.io
     - docker-ce
     - docker-ce-cli
