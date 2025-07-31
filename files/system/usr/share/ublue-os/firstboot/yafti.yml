@@ -42,7 +42,7 @@ screens:
       description: |
         We have detected that you don't have Flathub's repository on your current user account. We will now add that repository to your account.
       actions:
-        - run: flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
+        - run: flatpak remote-add --if-not-exists --user flathub --title="Flathub (user)" https://flathub.org/repo/flathub.flatpakrepo
   applications:
     source: yafti.screen.package
     values:
@@ -62,7 +62,6 @@ screens:
             - Camera: org.gnome.Snapshot
             - Characters: org.gnome.Characters
             - Clocks: org.gnome.clocks
-            - Connections: org.gnome.Connections
             - Contacts: org.gnome.Contacts
             - Disk Usage Analyzer: org.gnome.baobab
             - Document Scanner: org.gnome.SimpleScan
@@ -81,11 +80,15 @@ screens:
           description: System applications for all desktop environments.
           default: true
           packages:
+            - Extension Manager: com.mattjakeman.ExtensionManager
             - Fedora Media Writer: org.fedoraproject.MediaWriter
             - Flatseal (Permission Manager): com.github.tchx84.Flatseal
             - Font Downloader: org.gustavoperedo.FontDownloader
             - Ignition: io.github.flattool.Ignition
             - Mozilla Firefox: org.mozilla.firefox
+            - Refine: page.tesk.Refine
+            - Warehouse: io.github.flattool.Warehouse
+
         Web Browsers:
           description: Additional browsers to complement or replace Firefox.
           default: false
