@@ -9,7 +9,7 @@ configurations:
     install:
       - com.github.tchx84.Flatseal
       - com.mattjakeman.ExtensionManager
-      - io.github.dvlv.boxbuddyrs
+      - com.ranfdev.DistroShelf
       - io.missioncenter.MissionCenter
       - io.github.flattool.Warehouse
       - org.mozilla.firefox
@@ -17,4 +17,4 @@ configurations:
       - page.tesk.Refine
     remove:
       - com.valvesoftware.Steam
-      - io.github.qwersyk.Newelle
+      - io.github.dvlv.boxbuddyrs

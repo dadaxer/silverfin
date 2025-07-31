@@ -15,6 +15,7 @@ remove:
 install:
   packages:
     - distrobox
+    - fastfetch
     - input-remapper
     - lutris
     - mangohud
