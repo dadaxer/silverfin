@@ -1,6 +1,6 @@
 type: dnf
 repos:
-  nonfree: negativo17
+  # nonfree: negativo17
   copr:
     - atim/starship
   files:
@@ -18,10 +18,7 @@ install:
   packages:
     - fastfetch
     - input-remapper
-    - lutris
-    - mangohud
     - starship
-    - steam
     - rocm-hip
     - containerd.io
     - docker-ce
