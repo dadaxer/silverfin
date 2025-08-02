@@ -96,3 +96,8 @@ restore-window-size=true
 
 [org.gnome.Ptyxis.Shortcuts]
 primary-menu=''
+
+[org.gnome.settings-daemon.plugins.media-keys.custom1]
+binding='<Control><Alt>Return'
+command='/usr/bin/ptyxis --new-window'
+name='Ptyxis Alt'
