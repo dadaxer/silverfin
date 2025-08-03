@@ -1,15 +1,16 @@
 type: gnome-extensions
 install:
-  - App Hider
-  - Bluetooth Battery Meter
-  - Compact Top Bar
-  - Control monitor brightness and volume with ddcutil
-  - Dash to Dock
-  - Logo Menu
-  - Notification Configurator
-  - RunCat
-  - Tiling Shell
+    - App Hider
+    - Bluetooth Battery Meter
+    - Compact Top Bar
+    - Control monitor brightness and volume with ddcutil
+    - Dash to Dock
+    - Logo Menu
+    - Notification Configurator
+    - RunCat
+    - Search Light
+    - Tiling Shell
 uninstall:
-  - Apps Menu
-  - Launch new instance
-  - Places Status Indicator
+    - Apps Menu
+    - Launch new instance
+    - Places Status Indicator
