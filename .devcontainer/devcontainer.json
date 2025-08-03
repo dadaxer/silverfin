@@ -8,9 +8,10 @@
         "ghcr.io/devcontainers/features/github-cli:1": {},
         "ghcr.io/rchaganti/vsc-devcontainer-features/cosign:latest": {}
     },
-    "onCreateCommand": "cargo install --locked blue-build && apt install cosign",
+    "onCreateCommand": "cargo install --locked blue-build",
 
     "mounts": [
-        "source=${localEnv:HOME}/Dev/iso,target=/home/vscode/iso,type=bind,consistency=cached"
+        "source=${localEnv:HOME}/Dev/iso,target=/home/vscode/iso,type=bind,consistency=cached",
+        "source=${localEnv:HOME}/Dev/cosign-keys/silverfin/cosign.key,target=/workspaces/silverfin/cosign.key,type=bind,consistency=cached"
     ]
 }
