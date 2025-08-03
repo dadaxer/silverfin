@@ -11,6 +11,6 @@
     "onCreateCommand": "cargo install --locked blue-build",
 
     "mounts": [
-        "source=${localEnv:HOME},target=/home/vscode,type=bind,consistency=cached"
+        "source=${localEnv:HOME}/cloud/workspace/silverfin,target=/home/vscode/files,type=bind,consistency=cached"
     ]
 }
