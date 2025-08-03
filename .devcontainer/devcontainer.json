@@ -11,7 +11,6 @@
     "onCreateCommand": "cargo install --locked blue-build",
 
     "mounts": [
-        "source=${localEnv:HOME}/Dev/iso,target=/home/vscode/iso,type=bind,consistency=cached",
-        "source=${localEnv:HOME}/Dev/cosign-keys/silverfin/cosign.key,target=/workspaces/silverfin/cosign.key,type=bind,consistency=cached"
+        "source=${localEnv:HOME}/Dev/iso,target=/home/vscode/iso,type=bind,consistency=cached"
     ]
 }
