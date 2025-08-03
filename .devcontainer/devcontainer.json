@@ -11,6 +11,6 @@
     "onCreateCommand": "cargo install --locked blue-build",
 
     "mounts": [
-        "source=${localEnv:HOME}/Dev/iso,target=/home/vscode/iso,type=bind,consistency=cached"
+        "source=${localEnv:HOME},target=/home/vscode,type=bind,consistency=cached"
     ]
 }
