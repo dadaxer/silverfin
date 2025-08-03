@@ -1,0 +1,14 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+        "ghcr.io/devcontainers/features/rust:1": {
+            "profile": "default"
+        },
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    },
+    "onCreateCommand": "cargo install --locked blue-build",
+
+    "mounts": [
+        "source=${localEnv:HOME}/Dev/iso,target=/home/vscode/iso,type=bind,consistency=cached"
+    ]
+}
