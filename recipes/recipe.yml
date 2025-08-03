@@ -12,49 +12,49 @@ image-version: latest
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - type: os-release
-    properties:
-      ID: silverfin
-      NAME: Silverfin
-      PRETTY_NAME: Silverfin Image
-      VARIANT_ID: silverfin-dx
-      IMAGE_ID: silverfin-dx
-      RELEASE_TYPE: stable
-  - type: files
-    files:
-      - source: system
-        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+    - type: os-release
+      properties:
+          ID: silverfin
+          NAME: Silverfin
+          PRETTY_NAME: Silverfin Image
+          VARIANT_ID: silverfin-dx
+          IMAGE_ID: silverfin-dx
+          RELEASE_TYPE: stable
+    - type: files
+      files:
+          - source: system
+            destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-  - type: gschema-overrides
-    include:
-      - zz1-silverfin-modifications.gschema.override
+    - type: gschema-overrides
+      include:
+          - zz1-silverfin-modifications.gschema.override
 
-  - from-file: modules/packages-dnf.yml
+    - from-file: modules/packages-dnf.yml
 
-  - type: default-flatpaks
-    configurations:
-      - notify: true # Send notification after install/uninstall is finished (true/false)
-        scope: user
-        repo:
-          title: Flathub (user)
-          name: flathub
-        install:
-          - org.mozilla.firefox
-          - org.gnome.Loupe
-        remove:
-          - org.gnome.eog
+    - type: default-flatpaks
+      configurations:
+          - notify: true # Send notification after install/uninstall is finished (true/false)
+            scope: user
+            repo:
+                title: Flathub (user)
+                name: flathub
+            install:
+                - org.mozilla.firefox
+                - org.gnome.Loupe
+            remove:
+                - org.gnome.eog
 
-  - from-file: modules/gnome-extensions.yml
-  - from-file: modules/systemd.yml
+    - from-file: modules/gnome-extensions.yml
+    - from-file: modules/systemd.yml
 
-  - type: yafti
+    - type: yafti
 
-  - type: fonts
-    fonts:
-      nerd-fonts:
-        - BigBlueTerminal
-        - FiraCode
-        - GeistMono
-        - JetBrainsMono
+    - type: fonts
+      fonts:
+          nerd-fonts:
+              - BigBlueTerminal
+              - FiraCode
+              - GeistMono
+              - JetBrainsMono
 
-  - type: signing # this sets up the proper policy & signing files for signed images to work fully
+    - type: signing # this sets up the proper policy & signing files for signed images to work fully
