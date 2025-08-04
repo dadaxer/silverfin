@@ -7,7 +7,7 @@ ConditionPathExists=!/var/home/linuxbrew/.linuxbrew
 
 [Service]
 Type=oneshot
-ExecStartPost=/bin/sleep 30
+ExecStart=/bin/sleep 10
 ExecStart=/usr/bin/mkdir -p /tmp/homebrew
 ExecStart=/usr/bin/mkdir -p /var/home/linuxbrew
 ExecStart=/usr/bin/wget -O /tmp/homebrew.tar.zst https://github.com/ublue-os/packages/releases/download/homebrew-2025-07-29-01-30-49/homebrew-x86_64.tar.zst
