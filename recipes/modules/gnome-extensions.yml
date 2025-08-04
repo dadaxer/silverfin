@@ -12,5 +12,5 @@ install:
     - Tiling Shell
 uninstall:
     - Apps Menu
-    - Launch new instance
+    - Launch New Instance
     - Places Status Indicator

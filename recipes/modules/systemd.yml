@@ -1,4 +1,7 @@
 type: systemd
 system:
-  enabled:
-    - docker.service
+    enabled:
+        - docker.service
+# user:
+#     enabled:
+#         - distrobox-user-update.timer

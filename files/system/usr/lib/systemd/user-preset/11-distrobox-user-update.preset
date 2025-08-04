@@ -1,1 +1,1 @@
-enable distrobox-user-update.service
+enable distrobox-user-update.timer
