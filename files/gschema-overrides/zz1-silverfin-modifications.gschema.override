@@ -78,6 +78,9 @@ show-gamemode=false
 hide-forcequit=true
 show-boxbuddy=true
 
+[org.gnome.shell.extensions.search-light]
+shortcut-search=['<Super>space']
+
 [org.gnome.shell.extensions.runcat]
 displaying-items='character-only'
 idle-threshold=10
