@@ -6,7 +6,7 @@ screens:
         source: yafti.screen.title
         values:
             title: "Welcome to Silverfin (Alpha)"
-            icon: "/path/to/icon"
+            icon: "/usr/share/icons/Adwaita/symbolic/emotes/face-cool-symbolic.svg"
             description: |
                 This guided installer will help you get started with your new system.
     can-we-modify-your-flatpaks:
@@ -62,6 +62,7 @@ screens:
                         - Flatseal (Permission Manager): com.github.tchx84.Flatseal
                         - Font Downloader: org.gustavoperedo.FontDownloader
                         - Ignition: io.github.flattool.Ignition
+                        - Mission Center: io.missioncenter.MissionCenter
                         - Mozilla Firefox: org.mozilla.firefox
                         - Refine: page.tesk.Refine
                         - Warehouse: io.github.flattool.Warehouse

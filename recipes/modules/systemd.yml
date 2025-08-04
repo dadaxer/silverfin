@@ -1,7 +1,8 @@
 type: systemd
 system:
     enabled:
+        - brew-setup.service
         - docker.service
-# user:
-#     enabled:
-#         - distrobox-user-update.timer
+user:
+    enabled:
+        - distrobox-user-update.timer
