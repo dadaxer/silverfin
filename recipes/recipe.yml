@@ -41,7 +41,6 @@ modules:
               - BigBlueTerminal
               - FiraCode
               - GeistMono
-              - JetBrainsMono
 
     - type: yafti
 
