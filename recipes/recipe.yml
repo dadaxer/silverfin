@@ -41,6 +41,8 @@ modules:
               - BigBlueTerminal
               - FiraCode
               - GeistMono
+              - VictorMono
+              - Mononoki
 
     - type: yafti
 
