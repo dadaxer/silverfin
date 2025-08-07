@@ -1,27 +1,27 @@
 type: dnf
 repos:
-  # nonfree: negativo17
-  copr:
-    - atim/starship
-  files:
-    - https://download.docker.com/linux/fedora/docker-ce.repo
-  cleanup: true
+    # nonfree: negativo17
+    copr:
+        - atim/starship
+    files:
+        - https://download.docker.com/linux/fedora/docker-ce.repo
+    cleanup: true
 remove:
-  auto-remove: true
-  packages:
-    - gnome-tweaks
-    - firefox
-    - firefox-langpacks
-    - nvtop
-    - yelp
+    auto-remove: true
+    packages:
+        - gnome-tweaks
+        - firefox
+        - firefox-langpacks
+        - nvtop
+        - yelp
 install:
-  packages:
-    - fastfetch
-    - input-remapper
-    - starship
-    - rocm-hip
-    - containerd.io
-    - docker-ce
-    - docker-ce-cli
-    - docker-buildx-plugin
-    - docker-compose-plugin
+    packages:
+        - containerd.io
+        - docker-ce
+        - docker-ce-cli
+        - docker-buildx-plugin
+        - docker-compose-plugin
+        - fastfetch
+        - input-remapper
+        - rocm-hip
+        - starship
